@@ -303,8 +303,8 @@ Project revenue (collected in SOL on every trade)
 
 |Item|Detail|
 |---|---|
-|Prize pool wallet|`[PASTE PRIZE POOL WALLET ADDRESS HERE]`|
-|Explorer|`https://solscan.io/account/[PASTE PRIZE POOL WALLET ADDRESS HERE]`|
+|Prize pool wallet|`56jR6icH3eQVjNachZBRbAttHQxRRXZ3e8S1i8AhcF1A`|
+|Explorer|`https://solscan.io/account/56jR6icH3eQVjNachZBRbAttHQxRRXZ3e8S1i8AhcF1A`|
 |Asset|SOL (received, then used to buy $FAM)|
 |Allocation|50% of all project revenue, routed automatically by contract|
 |Allocation status|Set once, permanently locked, not changeable|
