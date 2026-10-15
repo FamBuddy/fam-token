@@ -320,6 +320,8 @@ Project revenue (collected in SOL on every trade)
 
 #### Weekly disclosure contents
 
+Before each draw, the project announces on the community channel: (1) the current prize pool amount, (2) the reward amount to be distributed this round, and (3) the reserved amount (gas reserve).
+
 Each week the project posts the following on the official X account, with explorer screenshots:
 
 1. The pool address's weekly SOL income and closing balance
