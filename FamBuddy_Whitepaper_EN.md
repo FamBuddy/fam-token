@@ -32,15 +32,15 @@
 
 $FAM is a community-driven meme coin built on Solana blockchain. We believe the spirit of cryptocurrency belongs to every participant — not a handful of whales.
 
-Through a weekly fair lottery mechanism, $FAM returns half of the platform creator fee to the community: fees are collected in SOL and split by the launchpad into a creator portion and a protocol portion. 50% of the creator portion is transferred automatically by contract into a fully public prize pool address, used to buy $FAM and pay winners directly. The team holds zero tokens. Supply is fixed. Our interests are fully aligned with the community.
+Through a weekly fair lottery, $FAM directs 50% of all transaction tax revenue into a fully public prize pool address, used to buy $FAM and pay winners directly; the other 50% funds project operations. The team holds zero tokens. Supply is fixed. Our interests are fully aligned with the community.
 
 ### The Mechanism at a Glance
 
 |Stage|Rule|
 |---|---|
-|Fee Collection|Charged in SOL with every trade|
-|Pool Source|50% of the creator fee (0.30% of a 1.25% total fee), routed automatically to a public pool address|
-|Reward Form|$FAM — purchased by the pool with SOL on a DEX|
+|Fee Collection|Transaction tax collected in SOL on every trade|
+|Pool Source|50% of all transaction tax, routed automatically to a public pool address|
+|Reward Form|$FAM — purchased by the pool with SOL on the open market|
 |Eligibility|Holding value ≥ $100 at snapshot; one person, one vote|
 |Winner Selection|sort_key = SHA256(address + SALT); top 3 by ascending value|
 |Prize Split|3 winners split the entire pool equally|
@@ -60,7 +60,7 @@ But today, most meme coins are broken: team wallets hold 20–50% of supply and 
 Our commitments:
 - Zero team allocation — no tokens reserved for the team
 - Fixed supply — no inflation, ever
-- Half of the creator fee routed automatically into a public prize pool address (paid out in $FAM)
+- 50% of all transaction tax routed automatically into a public prize pool address (paid out in $FAM)
 - One person, one vote — shrimp and whales on equal footing
 
 ---
@@ -87,7 +87,7 @@ $FAM is designed from the ground up to fix these.
 |Blockchain|Solana|
 |Supply|Fixed total — no inflation, ever|
 |Team Allocation|0% — no reserve, all tokens in circulation|
-|Fee Split|50% of the creator fee to the public pool / 50% to team operations|
+|Fee Split|50% of all transaction tax to the public pool / 50% to project operations|
 |Reward Form|**$FAM tokens** (purchased by the pool with SOL)|
 
 ### Brand Ethos
@@ -123,31 +123,26 @@ $FAM is not a speculation tool. It's a community. Every holder is part of the Fa
 ### 5.1 Supply Model
 - **Fixed total supply**: Circulating supply is constant from day one — no inflation
 - **Zero team reserve**: The team holds no tokens. Every token is in the open market
-- **Team revenue**: The only income stream is 50% of the creator fee — directly tied to community activity
+- **Team revenue**: The only income stream is 50% of all transaction tax — directly tied to community activity
 
-### 5.2 Fee Flow
+### 5.2 Revenue Allocation
 
-Trading fees are collected in **SOL**. Here is the launchpad's published fee structure in full, so nothing is ambiguous:
+Every trade on $FAM carries a transaction tax. That tax is split 50/50 — fixed and publicly committed:
 
-|Every trade fee|Share|Goes to|
+| Allocation | Share | Purpose |
 |---|---|---|
-|Total fee|**1.25%**|—|
-|of which: Creator fee|**0.30%**|The project, freely allocable|
-|of which: Protocol fee|0.95%|The launchpad, not allocable|
-
-**The portion available to the project is the 0.30% creator fee.** It is split as follows:
+| Community prize pool | 50% | Funds the weekly $FAM lottery |
+| Project operations | 50% | Development, marketing, maintenance |
 
 ```
-Creator fee 0.30% (collected in SOL)
+Transaction tax (collected in SOL)
   ├── 50% → Public prize pool address (routed automatically by contract)
-  │         ├── Majority → used to buy $FAM on a DEX → distributed to winners
+  │         ├── Majority → used to buy $FAM on the open market → distributed to winners
   │         └── Minority → reserved in SOL → gas fuel for distributing $FAM
-  └── 50% → Team operations (development, marketing, maintenance)
+  └── 50% → Project operations (development, marketing, maintenance)
 ```
 
-**The split is set once and locked permanently.** The launchpad allows the creator fee to be allocated across up to 10 wallets, but the allocation table cannot be changed once saved. This project set it at launch to **50% operations wallet / 50% public prize pool wallet**, each a separate address.
-
-Why this matters: because the public pool wallet is separate from the operations wallet and its address is public, **anyone can check its SOL balance and every incoming transfer on a block explorer at any time — no one has to take the project's word for it.** The routing happens in contract code, so there is no window in which the team could receive the fees and then decide how much to pass on.
+**The 50/50 split is fixed and publicly committed.** The prize pool wallet is a separate public address, so anyone can check its SOL balance and every incoming transfer on a block explorer at any time — no one has to take the project's word for it. The routing happens in contract code, so there is no window in which the team could receive the funds and then decide how much to pass on.
 
 **Why this design?**
 - Team revenue is directly tied to trading volume — the only way the team earns is if the community is active
@@ -284,14 +279,14 @@ Together, these mechanisms raise the cost of Sybil attacks and significantly inc
 
 ```
 Flow path:
-Creator fee (0.30% of each trade, collected in SOL)
+Transaction tax (collected in SOL on every trade)
   └── 50% → Public prize pool address
-            ├── Majority of SOL → buy $FAM on a DEX → back to the public prize pool address
+            ├── Majority of SOL → buy $FAM on the open market → back to the public prize pool address
             └── Minority of SOL → gas reserve (fuel backup)
 ```
 
-- **Rewards are $FAM; fees are collected in SOL**: Trading fees are collected in SOL. **50% of the creator portion (0.30%)** is routed automatically by contract into the public prize pool address; the remaining 50% funds team operations
-- The majority of the pool's SOL is used to buy **$FAM** on a decentralized exchange (DEX). The purchased $FAM is transferred in full to the public prize pool address and serves as that week's prize
+- **Rewards are $FAM; the transaction tax is collected in SOL**: **50% of all transaction tax** is routed automatically by contract into the public prize pool address; the remaining 50% funds project operations
+- The majority of the pool's SOL is used to buy **$FAM** on the open market. The purchased $FAM is transferred in full to the public prize pool address and serves as that week's prize
 - Once results are published, the pool address distributes **$FAM** to the 3 winners
 - A minority of the pool's SOL is kept as a **gas reserve**, dedicated to covering the gas cost of distributing $FAM
 
@@ -311,7 +306,7 @@ Creator fee (0.30% of each trade, collected in SOL)
 |Prize pool wallet|`[PASTE PRIZE POOL WALLET ADDRESS HERE]`|
 |Explorer|`https://solscan.io/account/[PASTE PRIZE POOL WALLET ADDRESS HERE]`|
 |Asset|SOL (received, then used to buy $FAM)|
-|Allocation|50% of the creator fee (0.30%), routed automatically by contract|
+|Allocation|50% of all transaction tax, routed automatically by contract|
 |Allocation status|Set once, permanently locked, not changeable|
 
 **Anyone can verify this independently at any time, without taking the project's word for anything:**
