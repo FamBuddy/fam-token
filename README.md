@@ -24,4 +24,4 @@ $FAM is a community-driven meme token on Solana: fixed supply, with 100% of toke
 
 > This repo also serves as the public version record of the whitepaper — the full commit history is open for anyone to audit.
 
-*We're all fam here. 🤝*
+*We're all fam here. 🐰*

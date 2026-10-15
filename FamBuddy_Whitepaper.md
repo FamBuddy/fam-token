@@ -376,4 +376,4 @@ Participation means you understand and agree to all terms.
 
 ---
 
-*We're all fam here. 🤝*
+*We're all fam here. 🐰*
