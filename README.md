@@ -4,7 +4,7 @@
 
 FamBuddy is the project, $FAM is the token, and the Fam is the community — three layers of the same thing.
 
-$FAM is a community-driven meme token on Solana: fixed supply, zero team holdings. Every week, 50% of all project revenue is used to buy $FAM, which is distributed to 3 winners through a fair, on-chain reproducible lottery.
+$FAM is a community-driven meme token on Solana: fixed supply. Every week, 50% of all project revenue is used to buy $FAM, which is distributed to 3 winners through a fair, on-chain reproducible lottery.
 
 ## Whitepaper
 

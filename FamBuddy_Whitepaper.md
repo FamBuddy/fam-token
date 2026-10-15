@@ -32,7 +32,7 @@
 
 $FAM is a community-driven meme coin built on Solana blockchain. We believe the spirit of cryptocurrency belongs to every participant — not a handful of whales.
 
-Through a weekly fair lottery, $FAM directs 50% of all project revenue revenue into a fully public prize pool address, used to buy $FAM and pay winners directly; the other 50% funds project operations. The team holds zero tokens. Supply is fixed. Our interests are fully aligned with the community.
+Through a weekly fair lottery, $FAM directs 50% of all project revenue into a fully public prize pool address, used to buy $FAM and pay winners directly; the other 50% funds project operations. Supply is fixed. Our interests are fully aligned with the community.
 
 ### The Mechanism at a Glance
 
@@ -58,7 +58,6 @@ But today, most meme coins are broken: team wallets hold 20–50% of supply and 
 **$FAM changes that.**
 
 Our commitments:
-- Zero team allocation — no tokens reserved for the team
 - Fixed supply — no inflation, ever
 - 50% of all project revenue routed automatically into a public prize pool address (paid out in $FAM)
 - One person, one vote — shrimp and whales on equal footing
@@ -86,7 +85,7 @@ $FAM is designed from the ground up to fix these.
 |Ticker|$FAM|
 |Blockchain|Solana|
 |Supply|Fixed total — no inflation, ever|
-|Team Allocation|0% — no reserve, all tokens in circulation|
+|Circulation|100% — all tokens in the open market|
 |Revenue Split|50% of all project revenue to the public pool / 50% to project operations|
 |Reward Form|**$FAM tokens** (purchased by the pool with SOL)|
 
@@ -122,7 +121,6 @@ $FAM is not a speculation tool. It's a community. Every holder is part of the Fa
 
 ### 5.1 Supply Model
 - **Fixed total supply**: Circulating supply is constant from day one — no inflation
-- **Zero team reserve**: The team holds no tokens. Every token is in the open market
 - **Team revenue**: The only income stream is 50% of all project revenue — directly tied to community activity
 
 ### 5.2 Revenue Allocation
@@ -338,9 +336,8 @@ $FAM commits to these principles forever:
 1. **One person, one vote**: Every address holding ≥ $100 gets exactly 1 ticket — shrimp and whales are equal
 2. **Cryptographic sorting**: Ticket assignment is determined by SHA256 — the team cannot manipulate the order
 3. **On-chain randomness**: The sort seed SALT comes from an on-chain block hash — the team cannot predict or tamper with it
-4. **Zero team allocation**: The team holds no tokens — we cannot dump
-5. **Fixed supply**: No inflation — your holding never gets diluted
-6. **Full transparency**: All rules, sorted lists, and transactions are publicly verifiable
+4. **Fixed supply**: No inflation — your holding never gets diluted
+5. **Full transparency**: All rules, sorted lists, and transactions are publicly verifiable
 
 ---
 
