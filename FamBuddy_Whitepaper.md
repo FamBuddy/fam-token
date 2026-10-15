@@ -32,14 +32,14 @@
 
 $FAM is a community-driven meme coin built on Solana blockchain. We believe the spirit of cryptocurrency belongs to every participant — not a handful of whales.
 
-Through a weekly fair lottery, $FAM directs 50% of all transaction tax revenue into a fully public prize pool address, used to buy $FAM and pay winners directly; the other 50% funds project operations. The team holds zero tokens. Supply is fixed. Our interests are fully aligned with the community.
+Through a weekly fair lottery, $FAM directs 50% of all project revenue revenue into a fully public prize pool address, used to buy $FAM and pay winners directly; the other 50% funds project operations. The team holds zero tokens. Supply is fixed. Our interests are fully aligned with the community.
 
 ### The Mechanism at a Glance
 
 |Stage|Rule|
 |---|---|
-|Fee Collection|Transaction tax collected in SOL on every trade|
-|Pool Source|50% of all transaction tax, routed automatically to a public pool address|
+|Revenue Source|Project revenue generated from every trade, collected in SOL|
+|Pool Source|50% of all project revenue, routed automatically to a public pool address|
 |Reward Form|$FAM — purchased by the pool with SOL on the open market|
 |Eligibility|Holding value ≥ $100 at snapshot; one person, one vote|
 |Winner Selection|sort_key = SHA256(address + SALT); top 3 by ascending value|
@@ -60,7 +60,7 @@ But today, most meme coins are broken: team wallets hold 20–50% of supply and 
 Our commitments:
 - Zero team allocation — no tokens reserved for the team
 - Fixed supply — no inflation, ever
-- 50% of all transaction tax routed automatically into a public prize pool address (paid out in $FAM)
+- 50% of all project revenue routed automatically into a public prize pool address (paid out in $FAM)
 - One person, one vote — shrimp and whales on equal footing
 
 ---
@@ -87,7 +87,7 @@ $FAM is designed from the ground up to fix these.
 |Blockchain|Solana|
 |Supply|Fixed total — no inflation, ever|
 |Team Allocation|0% — no reserve, all tokens in circulation|
-|Fee Split|50% of all transaction tax to the public pool / 50% to project operations|
+|Revenue Split|50% of all project revenue to the public pool / 50% to project operations|
 |Reward Form|**$FAM tokens** (purchased by the pool with SOL)|
 
 ### Brand Ethos
@@ -123,11 +123,11 @@ $FAM is not a speculation tool. It's a community. Every holder is part of the Fa
 ### 5.1 Supply Model
 - **Fixed total supply**: Circulating supply is constant from day one — no inflation
 - **Zero team reserve**: The team holds no tokens. Every token is in the open market
-- **Team revenue**: The only income stream is 50% of all transaction tax — directly tied to community activity
+- **Team revenue**: The only income stream is 50% of all project revenue — directly tied to community activity
 
 ### 5.2 Revenue Allocation
 
-Every trade on $FAM carries a transaction tax. That tax is split 50/50 — fixed and publicly committed:
+Every trade on $FAM generates project revenue. That revenue is split 50/50 — fixed and publicly committed:
 
 | Allocation | Share | Purpose |
 |---|---|---|
@@ -135,7 +135,7 @@ Every trade on $FAM carries a transaction tax. That tax is split 50/50 — fixed
 | Project operations | 50% | Development, marketing, maintenance |
 
 ```
-Transaction tax (collected in SOL)
+Project revenue (collected in SOL)
   ├── 50% → Public prize pool address (routed automatically by contract)
   │         ├── Majority → used to buy $FAM on the open market → distributed to winners
   │         └── Minority → reserved in SOL → gas fuel for distributing $FAM
@@ -279,13 +279,13 @@ Together, these mechanisms raise the cost of Sybil attacks and significantly inc
 
 ```
 Flow path:
-Transaction tax (collected in SOL on every trade)
+Project revenue (collected in SOL on every trade)
   └── 50% → Public prize pool address
             ├── Majority of SOL → buy $FAM on the open market → back to the public prize pool address
             └── Minority of SOL → gas reserve (fuel backup)
 ```
 
-- **Rewards are $FAM; the transaction tax is collected in SOL**: **50% of all transaction tax** is routed automatically by contract into the public prize pool address; the remaining 50% funds project operations
+- **Rewards are $FAM; the project revenue is collected in SOL**: **50% of all project revenue** is routed automatically by contract into the public prize pool address; the remaining 50% funds project operations
 - The majority of the pool's SOL is used to buy **$FAM** on the open market. The purchased $FAM is transferred in full to the public prize pool address and serves as that week's prize
 - Once results are published, the pool address distributes **$FAM** to the 3 winners
 - A minority of the pool's SOL is kept as a **gas reserve**, dedicated to covering the gas cost of distributing $FAM
@@ -306,12 +306,12 @@ Transaction tax (collected in SOL on every trade)
 |Prize pool wallet|`[PASTE PRIZE POOL WALLET ADDRESS HERE]`|
 |Explorer|`https://solscan.io/account/[PASTE PRIZE POOL WALLET ADDRESS HERE]`|
 |Asset|SOL (received, then used to buy $FAM)|
-|Allocation|50% of all transaction tax, routed automatically by contract|
+|Allocation|50% of all project revenue, routed automatically by contract|
 |Allocation status|Set once, permanently locked, not changeable|
 
 **Anyone can verify this independently at any time, without taking the project's word for anything:**
 
-- Every incoming transfer to that address can be checked one by one on a block explorer; the source is trading fees
+- Every incoming transfer to that address can be checked one by one on a block explorer; the source is project revenue
 - The SOL balance of that address reflects the pool's currently available funding
 - The weekly $FAM purchase and the payouts to the 3 winners are all on-chain and viewable
 - The address is **separate from the operations wallet**: operating spend and community prizes are physically isolated, so there is no window in which fees are pooled together and a split is decided later
