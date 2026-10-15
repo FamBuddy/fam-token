@@ -7,7 +7,7 @@
 |Version|v3.0|
 |Last Updated|October 14, 2026|
 |Status|Community Release|
-|Official Channel|All official announcements are published through official community channels|
+|Official Channel|All official announcements are published on the official X account: [@Fam_Buddy](https://x.com/Fam_Buddy)|
 
 ---
 
